@@ -1,0 +1,7 @@
+{
+  "name": "codeart",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
