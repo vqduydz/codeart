@@ -7,14 +7,10 @@ import { IonicModule } from '@ionic/angular';
 import { SchemaPageRoutingModule } from './schema-routing.module';
 
 import { SchemaPage } from './schema.page';
+import { ToolbarModule } from '../../../components/toolbar/toolbar.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    SchemaPageRoutingModule
-  ],
-  declarations: [SchemaPage]
+ imports: [CommonModule, FormsModule, IonicModule, SchemaPageRoutingModule, ToolbarModule],
+ declarations: [SchemaPage],
 })
 export class SchemaPageModule {}

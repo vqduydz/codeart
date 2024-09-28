@@ -37,17 +37,37 @@
 @import '@ionic/angular/css/palettes/dark.system.css';
 
 //
+
+/* Custome theme */
+//@import 'intro.js/introjs.css';
+@import '@ng-select/ng-select/themes/default.theme.css';
+
+@import './theme/_default-theme.scss';
+
+@import './theme/dpr-query.scss';
+@import './theme/common.scss';
+@import './theme/data-table.scss';
+@import './theme/form-control.scss';
+@import './theme/introjs.scss';
+@import './theme/ng-select.scss';
+@import './theme/gantt.scss';
+@import './theme/fullcalendar.scss';
+@import './theme/angular-tree-component.scss';
+@import './theme/print.scss';
+
+//
+
 ion-list {
-  padding: 0 !important;
+ padding: 0 !important;
 }
 
 .home-select-wrapper-popover {
-  --offset-x: -15px !important;
-  --width: 250px !important;
-  ion-item {
-    --min-height: 36px;
-  }
-  * {
-    font-size: 13px !important;
-  }
+ --offset-x: -15px !important;
+ --width: 250px !important;
+ ion-item {
+  --min-height: 36px;
+ }
+ * {
+  font-size: 13px !important;
+ }
 }

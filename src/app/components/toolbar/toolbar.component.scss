@@ -1,0 +1,52 @@
+ion-toolbar {
+ --min-height: 44px;
+ max-height: 44px;
+ border-bottom: 1px solid #d7d8da;
+ --padding-start: 0 !important;
+
+ ion-menu-button,
+ ion-back-button,
+ ion-button {
+  min-width: 12px;
+  min-height: 44px;
+  height: 44px !important;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --border-radius: 0px !important;
+  --background: #fff;
+  --background-hover: #fff;
+  --color: #3880ff;
+  width: auto;
+ }
+ ion-menu-button {
+  width: 50px;
+ }
+ ion-back-button {
+  --icon-font-size: 2rem;
+  --icon-margin-start: -5px;
+  --icon-margin-end: -10px;
+  font-size: 1.2rem !important;
+  text-transform: none;
+ }
+
+ ion-title {
+  padding: 0;
+ }
+
+ ion-buttons {
+  ion-button {
+   width: auto;
+  }
+ }
+
+ ion-back-button,
+ ion-button {
+  opacity: 1;
+  &:hover {
+   opacity: 0.7;
+  }
+  &:active {
+   opacity: 1;
+  }
+ }
+}

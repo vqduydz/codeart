@@ -1,13 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>not-found</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-toolbar [page]="page" pageTitle="Page Not Found" />
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">not-found</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content appScrollbarTheme scroll-y="false">
+ <div class="empty-message">
+  <div class="icon">
+   <img class="svgcolor" appSvgImage src="./assets/undraw_no_data_qbuo.svg" />
+  </div>
+  <div class="message">
+   <div class="title">{{'No data available'}}</div>
+   <div class="detail">
+    <ion-text> {{'Cannot find relevant data. Please select other sorting conditions!' }} </ion-text>
+   </div>
+  </div>
+ </div>
 </ion-content>

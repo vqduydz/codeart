@@ -1,0 +1,30 @@
+<ion-toolbar>
+ <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+  @if (true) {
+  <ion-back-button title="Back" icon="caret-back-outline" defaultHref="" [text]="pageTitle" />
+  }@else {
+  <ion-button style="font-size: 1.2rem; text-transform: none"> {{ pageTitle }} </ion-button>
+  }
+  <!-- <ion-icon name="caret-back-outline"></ion-icon> -->
+ </ion-buttons>
+ <!-- <ion-title>{{ pageTitle }}</ion-title> -->
+ <ion-buttons slot="end">
+  <!-- Add -->
+  <ion-button title="Add">
+   <ion-icon slot="icon-only" name="add" />
+  </ion-button>
+  <!-- Search -->
+  <ion-button title="Search">
+   <ion-icon slot="icon-only" name="search" />
+  </ion-button>
+  <!-- Refresh -->
+  <ion-button title="Refresh">
+   <ion-icon slot="icon-only" name="reload" />
+  </ion-button>
+  <!-- Export -->
+  <ion-button title="Export">
+   <ion-icon color="warning" slot="icon-only" name="cloud-download" />
+  </ion-button>
+ </ion-buttons>
+</ion-toolbar>

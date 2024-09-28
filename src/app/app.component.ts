@@ -36,18 +36,15 @@ export class AppComponent {
  pageConfigPageName = '';
  showHelp = false;
  showAppMenuHelp = true;
+ title = '';
 
  @ViewChild(IonRouterOutlet, { static: true }) routerOutlet!: IonRouterOutlet;
 
  _environment = environment;
 
  public appPages = [
-  { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-  { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-  { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-  { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-  { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-  { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+  { title: 'schema', url: 'schema' },
+  { title: 'system-type', url: 'system-type' },
  ];
 
  constructor(
@@ -56,14 +53,12 @@ export class AppComponent {
   public menu: MenuController,
   // public userSettingProvider: SYS_UserSettingProvider,
   // public branchProvider: BRA_BranchProvider,
+  public popoverCtrl: PopoverController,
   public env: EnvService,
   // public accountService: AccountService,
-  public popoverCtrl: PopoverController,
   public platform: Platform,
  ) {
   this.appVersion = `v${this.env.version}`;
-  console.log(this.appVersion);
-
   let imgs = [
    './assets/undraw_art_museum_8or4.svg',
    './assets/undraw_best_place_r685.svg',
